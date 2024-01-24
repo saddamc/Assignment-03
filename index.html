@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/69851e38e3.js" crossorigin="anonymous"></script>
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        new:'#665e5e6',
+                        old:'#424247',
                     }
                 }
             }
@@ -39,17 +43,13 @@
 
 <body class="manrope">
     <!-- navbar  -->
-    <header>
-        <nav class="container mx-auto lg:px-24 px:8 my-12">
+    <header class="max-w-[1300px] mx-auto">
+        <nav class="container mx-auto  lg:px-24 px:8 my-12">
             <div class="navbar bg-base-100 grid-cols-1">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                            
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-[#424247] rounded-box w-52  hover:text-green-700">
@@ -76,11 +76,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 opacity-70">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
+                    <i class="fa-solid fa-magnifying-glass text-[#424247] opacity-80"></i>
 
                     <button
                         class="w-[148px] h-[57px] font-semibold text-[#FFF] bg-[#FF4240] rounded-lg text-xl ml-4 hover:bg-green-400 duration-300">Get
@@ -89,7 +85,7 @@
             </div>
         </nav>
         <!-- header background image with slider -->
-        <div class="container mx-auto px-6 lg:px24 ">
+        <div class=" mx-auto px-6 lg:px24 ">
             <div class="carousel w-full">
                 <div id="slide1"
                     class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(images/banner.png)] bg-no-repeat h-[550px] flex justify-center text-center bg-center bg-cover rounded-2xl">
@@ -122,156 +118,163 @@
     </header>
     <main>
         <!--Hockey Club percentage skill-->
-        <section
-            class="container mx-auto px-6 lg:px24 h-[600px] text-[#131318] justify-center items-center text-center  ">
-            <div>
-                <h2 class="text-4xl text-center font-extrabold mb-5">Professional Hockeys Club</h2>
-                <p class="mx-auto max-w-[500px] mb-5">Elevating Excellence in Professional Play, United in Victory,
-                    Defining Glory on the Ice.</p>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-4 md:gird-cols-2 mx-auto  ">
-                <!-- skill 1 -->
+        <section class="max-w-[1300px] mx-auto ">
+            <div
+                class="container mx-auto px-6 lg:px24 h-[600px] text-[#131318] justify-center items-center text-center ">
                 <div>
-                    <div class="flex w-[300px] h-[330px] justify-center">
-                        <div class="skill">
-                            <div class="outer">
-                                <div class="inner">
-                                    <div id="number">
-                                        87%
+                    <h2 class="text-4xl text-center font-extrabold mb-5">Professional Hockeys Club</h2>
+                    <p class="mx-auto max-w-[500px] mb-5">Elevating Excellence in Professional Play, United in Victory,
+                        Defining Glory on the Ice.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-4 md:gird-cols-2 mx-auto  ">
+                    <!-- skill 1 -->
+                    <div>
+                        <div class="flex w-[300px] h-[330px] justify-center">
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number">
+                                            87%
+
+                                        </div>
 
                                     </div>
+                                </div>
+                                <div class=" w-[200px] h-[150px]">
+                                    <h3 class="text-xl font-semibold mb-4">Prayer Facility</h3>
+                                    <p>Elite hockey club player facility with top-notch training and coaching.</p>
 
                                 </div>
-                            </div>
-                            <div class=" w-[200px] h-[150px]">
-                                <h3 class="text-xl font-semibold mb-4">Prayer Facility</h3>
-                                <p>Elite hockey club player facility with top-notch training and coaching.</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle id="circle-1" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+
 
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                <defs>
-                                    <linearGradient id="GradientColor">
-                                        <stop offset="0%" stop-color="#e91e63" />
-                                        <stop offset="100%" stop-color="#673ab7" />
-                                    </linearGradient>
-                                </defs>
-                                <circle id="circle-1" cx="80" cy="80" r="70" stroke-linecap="round" />
-                            </svg>
-
 
                         </div>
-
                     </div>
-                </div>
-                <!-- skill 2 -->
-                <div>
-                    <div class="flex w-[300px] h-[350px] justify-center">
-                        <div class="skill">
-                            <div class="outer">
-                                <div class="inner">
-                                    <div id="number">
-                                        95%
+                    <!-- skill 2 -->
+                    <div>
+                        <div class="flex w-[300px] h-[350px] justify-center">
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number">
+                                            95%
+
+                                        </div>
 
                                     </div>
+                                </div>
+                                <div class=" w-[200px] h-[150px]">
+                                    <h3 class="text-xl font-semibold mb-4">Experienced Coach</h3>
+                                    <p>Experienced coach adept at honing skills, inspiring teamwork, and fostering
+                                        growth.
+                                    </p>
 
                                 </div>
-                            </div>
-                            <div class=" w-[200px] h-[150px]">
-                                <h3 class="text-xl font-semibold mb-4">Experienced Coach</h3>
-                                <p>Experienced coach adept at honing skills, inspiring teamwork, and fostering growth.
-                                </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle id="circle-2" cx="80" cy="80" r="70" stroke-linecap="round" />
+
+                                </svg>
+
 
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                <defs>
-                                    <linearGradient id="GradientColor">
-                                        <stop offset="0%" stop-color="#e91e63" />
-                                        <stop offset="100%" stop-color="#673ab7" />
-                                    </linearGradient>
-                                </defs>
-                                <circle id="circle-2" cx="80" cy="80" r="70" stroke-linecap="round" />
-
-                            </svg>
-
 
                         </div>
-
                     </div>
-                </div>
-                <!-- skill 3 -->
-                <div>
-                    <div class="flex w-[300px] h-[350px] justify-center">
-                        <div class="skill">
-                            <div class="outer">
-                                <div class="inner">
-                                    <div id="number">
-                                        91%
+                    <!-- skill 3 -->
+                    <div>
+                        <div class="flex w-[300px] h-[350px] justify-center">
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number">
+                                            91%
+
+                                        </div>
 
                                     </div>
+                                </div>
+                                <div class=" w-[200px] h-[150px]">
+                                    <h3 class="text-xl font-semibold mb-4">Senior Player</h3>
+                                    <p>Senior player excelling in leadership, skill, and consistent game performance.
+                                    </p>
 
                                 </div>
-                            </div>
-                            <div class=" w-[200px] h-[150px]">
-                                <h3 class="text-xl font-semibold mb-4">Senior Player</h3>
-                                <p>Senior player excelling in leadership, skill, and consistent game performance.</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle id="circle-3" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+
 
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                <defs>
-                                    <linearGradient id="GradientColor">
-                                        <stop offset="0%" stop-color="#e91e63" />
-                                        <stop offset="100%" stop-color="#673ab7" />
-                                    </linearGradient>
-                                </defs>
-                                <circle id="circle-3" cx="80" cy="80" r="70" stroke-linecap="round" />
-                            </svg>
-
 
                         </div>
-
                     </div>
-                </div>
-                <!-- skill 4 -->
-                <div>
-                    <div class="flex w-[300px] h-[350px] justify-center">
-                        <div class="skill">
-                            <div class="outer">
-                                <div class="inner">
-                                    <div id="number">
-                                        79%
+                    <!-- skill 4 -->
+                    <div>
+                        <div class="flex w-[300px] h-[350px] justify-center">
+                            <div class="skill">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number">
+                                            79%
+
+                                        </div>
 
                                     </div>
+                                </div>
+                                <div class=" w-[200px] h-[150px]">
+                                    <h3 class="text-xl font-semibold mb-4">Training Ground</h3>
+                                    <p>State-of-the-art training ground fostering excellence, growth, and peak athletic
+                                        achievement.</p>
 
                                 </div>
-                            </div>
-                            <div class=" w-[200px] h-[150px]">
-                                <h3 class="text-xl font-semibold mb-4">Training Ground</h3>
-                                <p>State-of-the-art training ground fostering excellence, growth, and peak athletic
-                                    achievement.</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e63" />
+                                            <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle id="circle-4" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+
 
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                <defs>
-                                    <linearGradient id="GradientColor">
-                                        <stop offset="0%" stop-color="#e91e63" />
-                                        <stop offset="100%" stop-color="#673ab7" />
-                                    </linearGradient>
-                                </defs>
-                                <circle id="circle-4" cx="80" cy="80" r="70" stroke-linecap="round" />
-                            </svg>
-
 
                         </div>
-
                     </div>
                 </div>
+
+
             </div>
         </section>
-       
+
         <section class="destinations-container">
             <div class="destinations">
                 <h1 class="text-4xl font-extrabold text-center mb-5">Program Sections</h1>
-                <p class="font-semibold opacity-70 text-center mb-6">Hockey Mastery: Junior Program, Teenager Program and Professional Program in Our Premier Club Program</p>
+                <p class="font-semibold opacity-70 text-center mb-6">Hockey Mastery: Junior Program, Teenager Program
+                    and Professional Program in Our Premier Club Program</p>
 
             </div>
             <div class="wrapper">
@@ -281,10 +284,11 @@
                             <img src="images/2.png" alt="">
                             <div class="gallery-overlay">
                                 <h1 class="mb-5 text-3xl font-extrabold text-white">Junior Program</h1>
-                                <p class="mb-5 text-white w-[400px] opacity-80 ">Nurturing Young Talent, Building Character,
-                                and Fostering Passion in Our Premier Junior Hockey Development Program for
-                                Future Champions.</p>
-                                <button class="btn border-none text-white w-[180px] bg-red-500">Register Now!</button>
+                                <p class="mb-5 text-white w-[400px] opacity-80 ">Nurturing Young Talent, Building
+                                    Character,
+                                    and Fostering Passion in Our Premier Junior Hockey Development Program for
+                                    Future Champions.</p>
+                                <button class="button-gallery">Register Now!</button>
                             </div>
                         </a>
                     </div>
@@ -293,25 +297,192 @@
                             <img src="images/3.png" alt="">
                             <div class="gallery-overlay">
                                 <h1 class="mb-5 text-3xl font-extrabold text-white">Teenager Program</h1>
-                                <p class="mb-5 text-white w-[400px] opacity-80 ">Empowering young athletes: Our hockey club's Teenager Program cultivates skills, sportsmanship, and camaraderie, shaping champions for a bright future.</p>
-                                <button class="btn border-none text-white w-[180px] bg-red-500">Register Now!</button>
+                                <p class="mb-5 text-white w-[400px] opacity-80 ">Empowering young athletes: Our hockey
+                                    club's Teenager Program cultivates skills, sportsmanship, and camaraderie, shaping
+                                    champions for a bright future.</p>
+                                <button class="button-gallery">Register Now!</button>
                             </div>
                         </a>
                     </div>
                     <div class="gallery-item-3">
                         <a href="#" class="gallery-link">
                             <img src="images/4.png" alt="">
-                            <div class="gallery-overlay">
+                            <div id="professional" class="gallery-overlay-view">
                                 <h1 class="mb-5 text-3xl font-extrabold text-white ">Professional Program</h1>
-                                <p class="mb-5 text-white w-[400px] opacity-80 ">Elevate your game: Join our professional program for elite training, expert coaching, and a pathway to success in professional hockey.</p>
-                                <button class="btn border-none text-white w-[180px] bg-red-500">Register Now!</button>
+                                <p class="mb-5 text-white w-[400px] opacity-80 ">Elevate your game: Join our
+                                    professional program for elite training, expert coaching, and a pathway to success
+                                    in professional hockey.</p>
+                                <button class="button-gallery">Register Now!</button>
                             </div>
                         </a>
-                    </div>                   
+                    </div>
                 </div>
             </div>
         </section>
-        
+        <section class="max-w-[1300px] mx-auto my-20 ">
+            <div
+                class="container mx-auto px-6 lg:px24 h-[600px] text-[#131318] justify-center items-center text-center ">
+                <div>
+                    <h2 class="text-4xl text-center font-extrabold mb-5">Our New Products</h2>
+                    <p class="mx-auto max-w-[500px] text-[424247] mb-20">Sports jacket, World Cup Flags Football, Cap, Sports jersey,
+                        Cricket Helmet & Football</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10">
+                    <!-- product one -->
+                    <div class="lg:flex space-y-4 rounded-xl shadow-2xl">
+                        <div>
+                            <img class="p-6" src="images/5.png" alt="">
+
+                        </div>
+                        <div class="ml-4 space-y-4 text-[424247]">
+                            <div class="flex items-center space-x-8">
+                                <a class="flex items-center" href=""><img class="w-6 mr-2" src="images/star.png" alt="">5.0</a>
+                                <i class="fa-regular fa-eye"><span class="ml-2">20</span></i>
+                                <i class="fa-regular fa-heart"><span class="ml-2">207</span></i>
+
+                            </div>
+                            <div class="text-start">
+                                <h3 class="text-xl font-extrabold mb-1 ">World Cup Jacket</h3>
+                                <p class="text-[#424247]">It was very much productive in this cold season</p>
+
+                            </div>
+                            <div class="flex space-x-4">
+                                <a class="text-red-600 text-lg font-extrabold" href="">Pirce - $25.00</a>
+                                <a class="flex items-center"><img class="w-6 h-6 mr-2" src="images/cart.png" alt="">Delivery Fee : FREE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- product two -->
+                    <div class="lg:flex space-y-4 rounded-xl shadow-2xl">
+                        <div>
+                            <img class="p-6" src="images/6.png" alt="">
+
+                        </div>
+                        <div class="ml-4 space-y-4 text-[424247]">
+                            <div class="flex items-center space-x-8">
+                                <a class="flex items-center" href=""><img class="w-6 mr-2" src="images/star.png" alt="">5.0</a>
+                                <i class="fa-regular fa-eye"><span class="ml-2">30</span></i>
+                                <i class="fa-regular fa-heart"><span class="ml-2">307</span></i>
+
+                            </div>
+                            <div class="text-start">
+                                <h3 class="text-xl font-extrabold mb-1 ">World Cup Flags Football</h3>
+                                <p class="text-[#424247]">It making something special for new technology</p>
+
+                            </div>
+                            <div class="flex space-x-4">
+                                <a class="text-red-600 text-lg font-extrabold" href="">Pirce - $25.00</a>
+                                <a class="flex items-center"><img class="w-6 h-6 mr-2" src="images/cart.png" alt="">Delivery Fee : FREE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- product three -->
+                    <div class="lg:flex space-y-4 rounded-xl shadow-2xl">
+                        <div>
+                            <img class="p-6" src="images/7.png" alt="">
+
+                        </div>
+                        <div class="ml-4 space-y-4 text-[424247]">
+                            <div class="flex items-center space-x-8">
+                                <a class="flex items-center" href=""><img class="w-6 mr-2" src="images/star.png" alt="">5.0</a>
+                                <i class="fa-regular fa-eye"><span class="ml-2">20</span></i>
+                                <i class="fa-regular fa-heart"><span class="ml-2">207</span></i>
+
+                            </div>
+                            <div class="text-start">
+                                <h3 class="text-xl font-extrabold mb-1 ">World Cup Cap</h3>
+                                <p class="text-[#424247]">It looking new style for player & everyone</p>
+
+                            </div>
+                            <div class="flex space-x-4">
+                                <a class="text-red-600 text-lg font-extrabold" href="">Pirce - $25.00</a>
+                                <a class="flex items-center"><img class="w-6 h-6 mr-2" src="images/cart.png" alt="">Delivery Fee : FREE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- product four -->
+                    <div class="lg:flex space-y-4 rounded-xl shadow-2xl  ">
+                        <div>
+                            <img class="p-6" src="images/8.png" alt="">
+
+                        </div>
+                        <div class="ml-4 space-y-4 text-[424247]">
+                            <div class="flex items-center space-x-8">
+                                <a class="flex items-center" href=""><img class="w-6 mr-2" src="images/star.png" alt="">5.0</a>
+                                <i class="fa-regular fa-eye"><span class="ml-2">20</span></i>
+                                <i class="fa-regular fa-heart"><span class="ml-2">207</span></i>
+
+                            </div>
+                            <div class="text-start">
+                                <h3 class="text-xl font-extrabold mb-1 ">Sports Jersey</h3>
+                                <p class="text-[#424247]">This is best Jersey design & new looking signature jersey</p>
+
+                            </div>
+                            <div class="flex space-x-4">
+                                <a class="text-red-600 text-lg font-extrabold" href="">Pirce - $25.00</a>
+                                <a class="flex items-center"><img class="w-6 h-6 mr-2" src="images/cart.png" alt="">Delivery Fee : FREE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- product five -->
+                    <div class="lg:flex space-y-4 rounded-xl shadow-2xl">
+                        <div>
+                            <img class="p-6" src="images/9.png" alt="">
+
+                        </div>
+                        <div class="ml-4 space-y-4 text-[424247]">
+                            <div class="flex items-center space-x-8">
+                                <a class="flex items-center" href=""><img class="w-6 mr-2" src="images/star.png" alt="">5.0</a>
+                                <i class="fa-regular fa-eye"><span class="ml-2">20</span></i>
+                                <i class="fa-regular fa-heart"><span class="ml-2">207</span></i>
+
+                            </div>
+                            <div class="text-start">
+                                <h3 class="text-xl font-extrabold mb-1 ">World Cup Helmet</h3>
+                                <p class="text-[#424247]">It was very much strong & safety</p>
+
+                            </div>
+                            <div class="flex space-x-4">
+                                <a class="text-red-600 text-lg font-extrabold" href="">Pirce - $25.00</a>
+                                <a class="flex items-center"><img class="w-6 h-6 mr-2" src="images/cart.png" alt="">Delivery Fee : FREE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- product six -->
+                    <div class="lg:flex space-y-4 rounded-xl shadow-2xl">
+                        <div>
+                            <img class="p-6" src="images/10.png" alt="">
+                        </div>
+                        <div class="ml-4 space-y-4 text-[424247]">
+                            <div class="flex items-center space-x-8">
+                                <a class="flex items-center" href=""><img class="w-6 mr-2" src="images/star.png" alt="">5.0</a>
+                                <i class="fa-regular fa-eye"><span class="ml-2">20</span></i>
+                                <i class="fa-regular fa-heart"><span class="ml-2">207</span></i>
+
+                            </div>
+                            <div class="text-start">
+                                <h3 class="text-xl font-extrabold mb-1 ">World Cup Football</h3>
+                                <p class="text-[#424247]">It make with some special technology for Football</p>
+
+                            </div>
+                            <div class="flex space-x-4">
+                                <a class="text-red-600 text-lg font-extrabold" href="">Pirce - $25.00</a>
+                                <a class="flex items-center"><img class="w-6 h-6 mr-2" src="images/cart.png" alt="">Delivery Fee : FREE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+
+        </section>
+
 
 
     </main>
