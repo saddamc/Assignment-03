@@ -10,6 +10,7 @@
     margin-bottom: 30px;
     border-radius: 50%;
     padding: 20px;
+    background-color: rgb(192, 201, 201);
     border: 2px solid #E3EDF7;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 
                 -6px -6px -10px -1px rgba(255, 255, 255, 0.7);
@@ -22,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
     border: 2px solid #E3EDF7;
     box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), 
                 inset -4px -4px -6px -1px rgba(255, 255, 255, 0.7), 
